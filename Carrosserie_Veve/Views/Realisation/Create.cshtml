@@ -1,0 +1,48 @@
+@model MvcVeve.Models.Realisation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2 style="text-align:center">Ajouter une Realisation</h2>
+<hr />
+<div class="row container">
+    <div class="col-md-4">
+        <form asp-action="Create " method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="NomRealisation" class="control-label"></label>
+                <input asp-for="NomRealisation" class="form-control" />
+                <span asp-validation-for="NomRealisation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageAvt" class="control-label"></label>
+                <input asp-for="ImageAvt" class="form-control" type="file" name="ImageAvt" accept="image/png, image/jpeg, image/webp" required  />
+                <span asp-validation-for="ImageAvt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageAp" class="control-label"></label>
+                <input asp-for="ImageAp" class="form-control" type="file" name="ImageAp" accept="image/png, image/jpeg, image/webp" required/>
+                <span asp-validation-for="ImageAp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div><br/>
+            
+            <div class="form-group">
+                <input asp-page-handler="Upload" type="submit" value="Ajouter une réalisation" class="btn btn-danger" />
+                <a asp-action="Index"><input class="btn btn-secondary" type="button" value="Retour"></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+    
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,27 @@
+@model MvcVeve.Models.Realisation
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="bg-light">
+    
+    
+    <h2 style="text-align:center">@Html.DisplayFor(model => model.NomRealisation)</h2><br/><hr />
+     <div class="row">
+        <h5 style="text-align:center">Avant/Après</h5>
+        <div class="col page" style="height:25%" >
+            <img class="card-img-top " style="margin-top:10px" src=../../images/@(Model.ImageAvt) alt="photo avant rénovations">
+        </div>
+        <div class="col page" style="height:25%">
+            <img class="card-img-top " style="margin-top:10px" src=../../images@(Model.ImageAp) alt="photo après rénovations">
+        </div>
+        </div><hr />
+        <div class="container" style="width: 18rem; text-align:center">
+        
+        
+    @Html.DisplayFor(model => model.Description)
+    <br/>
+        <p><br/></p>
+        </div>
+ <br/>
+</div>

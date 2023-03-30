@@ -1,0 +1,30 @@
+@model IEnumerable<MvcVeve.Models.Horaire>
+@{
+    ViewData["Title"] = "Horaire";
+}
+
+<div class="page"><br/><br/><br/><br/><h1 class="text-center">Contact</h1><br/><br/><br/><br/></div>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<div class="row">
+    <div class="col page m-3" style="height:50%"><br/><br/><br/><h2 class="titre">Adresse</h2><br/><br/>
+        <p class="container text-center">491 Avenue de la Pomme, <br/>
+        13 750 Plan-d'Orgon</p><br/><br/><br/>
+    </div>
+    <div class="col page" style="height:50%"><br/> <img src="https://www.mygarages.fr/images/800/mygarages/slide.jpg" class="d-block w-100 center"></div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<div class="page container text-center">
+    <br/><br/><br/><h2 class="titre">Nos Horaires :</h2><br/>
+        <p class="container text-center">  
+            @foreach (var item in Model)
+{
+            <p>Du lundi au jeudi : </p> @Html.DisplayFor(modelItem => item.HeureDebut)<p> à </p>@Html.DisplayFor(modelItem => item.HeureFin)
+            <p>Fermé le </p>@Html.DisplayFor(modelItem => item.JourOff)
+            <p>Fermé du </p>@Html.DisplayFor(modelItem => item.Vacances)
+            }
+        </p><br/><br/><br/>
+        <br/><h2 class="titre">Numéro :</h2><br/>
+        <p class="container text-center" style="font-size:x-large">
+            04 90 73 19 77
+        </p><br/><br/><br/>
+</div>

@@ -1,0 +1,48 @@
+@model MvcVeve.Models.Realisation
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2 style="text-align:center">Modifier</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="NomRealisation" class="control-label"></label>
+                <input asp-for="NomRealisation" class="form-control" />
+                <span asp-validation-for="NomRealisation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageAvt" class="control-label"></label>
+                <input asp-for="ImageAvt" class="form-control" />
+                <span asp-validation-for="ImageAvt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageAp" class="control-label"></label>
+                <input asp-for="ImageAp" class="form-control" />
+                <span asp-validation-for="ImageAp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group"  style="margin-top:10px" >
+                <input type="submit" value="Enregistrer" class="btn btn-danger" /> 
+                <a asp-action="Index"><input class="btn btn-secondary" type="button" value="Retour"></a>
+            </div>
+        </form>
+    </div>
+</div>
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="imageFile" accept="image/png, image/jpeg, image/webp" required />
+    <input type="submit" value="Upload" />
+</form>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

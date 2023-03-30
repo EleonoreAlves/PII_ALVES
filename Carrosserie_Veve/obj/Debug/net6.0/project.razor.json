@@ -18374,8 +18374,33 @@
   "RootNamespace": "Carrosserie_Veve",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Realisation\\Index.cshtml",
+      "TargetPath": "Views\\Realisation\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Realisation\\Delete.cshtml",
+      "TargetPath": "Views\\Realisation\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Realisation\\Details.cshtml",
+      "TargetPath": "Views\\Realisation\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Prestation\\Delete.cshtml",
+      "TargetPath": "Views\\Prestation\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Prestation\\Create.cshtml",
+      "TargetPath": "Views\\Prestation\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18389,6 +18414,26 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Prestation\\Edit.cshtml",
+      "TargetPath": "Views\\Prestation\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Realisation\\Edit.cshtml",
+      "TargetPath": "Views\\Realisation\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Realisation\\Create.cshtml",
+      "TargetPath": "Views\\Realisation\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Prestation\\Index.cshtml",
+      "TargetPath": "Views\\Prestation\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -18399,6 +18444,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Horaire\\Index.cshtml",
+      "TargetPath": "Views\\Horaire\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Prestation\\Details.cshtml",
+      "TargetPath": "Views\\Prestation\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -18406,11 +18461,6 @@
     {
       "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\Views\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {

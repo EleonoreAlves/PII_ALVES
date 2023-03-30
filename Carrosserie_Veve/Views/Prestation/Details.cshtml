@@ -1,0 +1,18 @@
+@model MvcVeve.Models.Prestation
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="bg-light">
+  <div>@Html.DisplayFor(model => model.URLImage)
+  </div>
+  <div class="container" style="width: 18rem; text-align:center">
+   <h2 style="text-align:center">@Html.DisplayFor(model => model.NomPrestation)
+   </h2><br/>
+   <hr />
+    @Html.DisplayFor(model => model.Description)
+    <br/>
+  </div>
+ <br/>
+
+</div>

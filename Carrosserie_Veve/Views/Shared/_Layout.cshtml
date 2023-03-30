@@ -5,42 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Carrosserie_Veve</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/style.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Carrosserie_Veve.styles.css" asp-append-version="true" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+<body class="  bg-secondary" >
+    <header >
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-danger border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Carrosserie_Veve</a>
+                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">Carrosserie Veve</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between ">
+                    <ul></ul>
+                    <ul class="navbar-nav flex-grow-2">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Prestation" asp-action="Index">Nos Prestations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Realisation" asp-action="Index">Nos Realisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Horaire" asp-action="Index">Nous contacter</a>
                         </li>
                     </ul>
-                    <partial name="_LoginPartial" />
+                    
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container   bg-light">
+        <main role="main" class="pb-3"  >
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - Carrosserie_Veve - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer class="border-top footer text-muted bg-danger" >
+            <div class="row bg-danger" style="padding: 15px">
+                <div class="col-6 text-white"><a class="text-white" asp-area="" asp-controller="Home" asp-action="Index">Contact</a> <br/> 
+             04 90 73 19 77<br/>
+            491 Av. de la Pomme, 13750 Plan-d'Orgon
+                </div>
+                <div class="col-3 text-white">
+                            <a class="text-white" asp-area="" asp-controller="Horaire" asp-action="Index">Nos Horaires</a> <br/> 
+             lundi au jeudi : 7h30 à 17h30<br/>
+            vendredi : 7h30 à 12h30<br/>
+                </div>
+                <div class="col-3 text-white">
+                            &copy; 2023 - Carrosserie_Veve - <a class="text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+            </div>
+        
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

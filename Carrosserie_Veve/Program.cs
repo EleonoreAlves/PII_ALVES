@@ -1,10 +1,15 @@
 using Microsoft.AspNetCore.Identity;
+using MvcVeve.Models;
 using Microsoft.EntityFrameworkCore;
 using Carrosserie_Veve.Data;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
-
+//SeedData.Init();
 // Add services to the container.
+builder.Services.AddControllersWithViews().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
+//builder.Services.AddDbContext<MvcVeveContext>();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));

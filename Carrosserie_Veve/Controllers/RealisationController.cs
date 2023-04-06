@@ -96,19 +96,38 @@ public class RealisationController : Controller
     }
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,NomRealisation,ImageAvt,ImageAp,Description")] Realisation realisation)
+    public async Task<IActionResult> Edit(int id, [Bind("Id,NomRealisation,ImageAvt,ImageAp,Description")] Realisation realisation,IFormFile ImageAvt,IFormFile ImageAp)
     {
         if (id != realisation.Id)
         {
             return NotFound();
         }
 
-        if (ModelState.IsValid)
-        {
+        
             try
-            {
-                _context.Update(realisation);
-                await _context.SaveChangesAsync();
+            {  if (ImageAvt != null && ImageAvt.Length > 0 && ImageAp != null && ImageAp.Length > 0)
+                {
+                    var fileavtName = Path.GetFileName(ImageAvt.FileName);
+                    var fileavtPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileavtName);
+
+                    var fileapName = Path.GetFileName(ImageAp.FileName);
+                    var fileapPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileapName);
+
+                    using (var stream = new FileStream(fileavtPath, FileMode.Create))
+                    {
+                        await ImageAvt.CopyToAsync(stream);
+                    }
+                    using (var stream = new FileStream(fileapPath, FileMode.Create))
+                    {
+                        await ImageAp.CopyToAsync(stream);
+                    }
+
+                    realisation.ImageAvt = fileavtName;
+                    realisation.ImageAp = fileapName;
+
+                    _context.Update(realisation);
+                    await _context.SaveChangesAsync();
+                }
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -122,8 +141,7 @@ public class RealisationController : Controller
                 }
             }
             return RedirectToAction(nameof(Index));
-        }
-        return View(realisation);
+        
     }
 
     private bool RealisationExists(int id)

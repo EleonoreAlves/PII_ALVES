@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5sm0uNpL4uiu73ztTobDVFOFhrmdLFlc1K9X/SDLG2I=",
+  "Hash": "njwe5/eHNVpjCA/RDGJe8vWvpKv216lBhdU1qeQUPF8=",
   "Source": "Carrosserie_Veve",
   "BasePath": "_content/Carrosserie_Veve",
   "Mode": "Default",
@@ -1120,6 +1120,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\ajouter.png"
+    },
+    {
+      "Identity": "C:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\Apres.jpg",
+      "SourceId": "Carrosserie_Veve",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\",
+      "BasePath": "_content/Carrosserie_Veve",
+      "RelativePath": "images/Apres.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Apres.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\Avant.jpg",
+      "SourceId": "Carrosserie_Veve",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\",
+      "BasePath": "_content/Carrosserie_Veve",
+      "RelativePath": "images/Avant.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Avant.jpg"
     },
     {
       "Identity": "C:\\Users\\ealves005\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\dezFE.jpg",

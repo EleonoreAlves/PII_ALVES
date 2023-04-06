@@ -2,15 +2,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MvcVeve.Models;
-using MvcVeve.Data;
+using Carrosserie_Veve.Data;
 
 
 namespace MvcVeve.Controllers;
 
 public class HoraireController : Controller{
-    private readonly MvcVeveContext _context;
+    private readonly ApplicationDbContext _context;
 
-    public HoraireController(MvcVeveContext context)
+    public HoraireController(ApplicationDbContext context)
     {
         _context=context;
     }

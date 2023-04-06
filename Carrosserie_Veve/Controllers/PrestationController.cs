@@ -1,15 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MvcVeve.Data;
+using Carrosserie_Veve.Data;
 using MvcVeve.Models;
 
 namespace MvcVeve.Controllers;
 
 public class PrestationController : Controller
 {
-    private readonly MvcVeveContext _context;
+    private readonly ApplicationDbContext _context;
 
-    public PrestationController(MvcVeveContext context)
+    public PrestationController(ApplicationDbContext context)
     {
         _context = context;
     }

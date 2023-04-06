@@ -3,15 +3,17 @@ using MvcVeve.Models;
 using Microsoft.EntityFrameworkCore;
 using Carrosserie_Veve.Data;
 using System.Text.Json.Serialization;
+using Carrosserie_Veve.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-//SeedData.Init();
+SeedData.Init();
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 //builder.Services.AddDbContext<MvcVeveContext>();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<Carrosserie_VeveIdentityDbContext>(options =>
+    options.UseSqlServer(connectionString));builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 

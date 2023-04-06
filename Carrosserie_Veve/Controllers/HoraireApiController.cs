@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MvcVeve.Data;
+using Carrosserie_Veve.Data;
 using MvcVeve.Models;
 
 namespace MvcVeve.Controllers;
@@ -9,9 +9,9 @@ namespace MvcVeve.Controllers;
 [ApiController]
 public class HoraireApiController : ControllerBase
 {
-    private readonly MvcVeveContext _context;
+    private readonly ApplicationDbContext _context;
 
-    public HoraireApiController(MvcVeveContext context)
+    public HoraireApiController(ApplicationDbContext context)
     {
         _context = context;
     }

@@ -1,4 +1,6 @@
 @model IEnumerable<MvcVeve.Models.Prestation>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
 
 @{
     ViewData["Title"] = "Prestation";
@@ -16,8 +18,12 @@
     <p class="card-text" style="text-align:center">@Html.DisplayFor(modelItem => item.Description_courte)</p> 
     <br/>
     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-danger container" > En savoir plus</a><br/>
+
+  @if (SignInManager.IsSignedIn(User))
+  {
     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-danger container" style="margin-top:10px" > Modifier</a><br/><br/>
     <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger container" > Supprimer</a>
+  }
   </div>
 </div> <br/>
 }

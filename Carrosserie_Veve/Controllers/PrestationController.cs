@@ -52,7 +52,7 @@ public class PrestationController : Controller
     public async Task<IActionResult> Create([Bind("NomPrestation,URLImage,Description_courte,Description")] Prestation prestation, IFormFile URLImage )
     {
 
-    if (URLImage != null && URLImage.Length > 0 )
+        if (URLImage != null && URLImage.Length > 0 )
         {
             var fileName = Path.GetFileName(URLImage.FileName);
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileName);
@@ -69,7 +69,7 @@ public class PrestationController : Controller
          }
         return RedirectToAction(nameof(Index));
     }
-        // GET: Prestation/Edit/5
+        // PUT : 
     public async Task<IActionResult> Edit(int? id)
     {
         if (id == null)
@@ -86,19 +86,30 @@ public class PrestationController : Controller
     }
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,NomPrestation,URLImage,Description_courte,Description")] Prestation prestation)
+    public async Task<IActionResult> Edit(int id, [Bind("Id,NomPrestation,URLImage,Description_courte,Description")] Prestation prestation,IFormFile URLImage)
     {
         if (id != prestation.Id)
         {
             return NotFound();
         }
-
-        if (ModelState.IsValid)
-        {
+        
             try
             {
-                _context.Update(prestation);
-                await _context.SaveChangesAsync();
+                if(URLImage != null && URLImage.Length > 0)
+                {
+                    var fileimgName = Path.GetFileName(URLImage.FileName);
+                    var fileimgPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileimgName);
+                
+ //problème : FileMode.Edit ne fonctionne pas obliger d'avoir FileMode.Create => obligation de retélécharger l'image à chaque fois qu'on veut modif       
+                using (var stream = new FileStream(fileimgPath, FileMode.Create))
+                {
+                    await URLImage.CopyToAsync(stream);
+                }
+                    prestation.URLImage=fileimgName;  
+
+                    _context.Update(prestation);
+                    await _context.SaveChangesAsync();
+                }
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -111,9 +122,8 @@ public class PrestationController : Controller
                     throw;
                 }
             }
-            return RedirectToAction(nameof(Index));
-        }
-        return View(prestation);
+        
+        return RedirectToAction(nameof(Index));
     }
 
     private bool PrestationExists(int id)

@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 using Carrosserie_Veve.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-SeedData.Init();
+//SeedData.Init();
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 

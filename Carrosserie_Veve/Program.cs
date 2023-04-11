@@ -13,12 +13,12 @@ builder.Services.AddControllersWithViews().AddJsonOptions(x => x.JsonSerializerO
 //builder.Services.AddDbContext<MvcVeveContext>();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<Carrosserie_VeveIdentityDbContext>(options =>
-    options.UseSqlServer(connectionString));builder.Services.AddDbContext<ApplicationDbContext>(options =>
+   // options.UseSqlServer(connectionString));builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+    .AddEntityFrameworkStores<Carrosserie_VeveIdentityDbContext>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

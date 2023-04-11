@@ -1,16 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
-using Carrosserie_Veve.Data;
+using Carrosserie_Veve.Areas.Identity.Data;
 using MvcVeve.Models;
 
 namespace MvcVeve.Controllers;
 
 public class RealisationController : Controller
 {
-    private readonly ApplicationDbContext _context;
+    private readonly Carrosserie_VeveIdentityDbContext _context;
 
-    public RealisationController(ApplicationDbContext context)
+    public RealisationController(Carrosserie_VeveIdentityDbContext context)
     {
         _context = context;
     }

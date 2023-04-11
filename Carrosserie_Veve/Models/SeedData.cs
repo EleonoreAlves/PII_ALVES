@@ -1,14 +1,15 @@
 using Carrosserie_Veve.Data;
 using Microsoft.EntityFrameworkCore;
 namespace MvcVeve.Models;
+using Carrosserie_Veve.Areas.Identity.Data;
 
 public class SeedData{
     
 
     public static void Init(){
-        var optionsBuilder=new DbContextOptionsBuilder<ApplicationDbContext>();
+        var optionsBuilder=new DbContextOptionsBuilder<Carrosserie_VeveIdentityDbContext>();
         optionsBuilder.UseSqlite("Data source=app.db");
-        using (var context=new ApplicationDbContext(optionsBuilder.Options)){
+        using (var context=new Carrosserie_VeveIdentityDbContext(optionsBuilder.Options)){
 
             // On regarde si la BDD est déjà remplie
             if(context.Prestations.Any())

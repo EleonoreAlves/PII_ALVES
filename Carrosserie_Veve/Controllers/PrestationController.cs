@@ -49,20 +49,20 @@ public class PrestationController : Controller
     //POST : Prestation/Create
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("NomPrestation,URLImage,Description_courte,Description")] Prestation prestation, IFormFile URLImage )
+    public async Task<IActionResult> Create([Bind("NomPrestation,Image,Description_courte,Description")] Prestation prestation, IFormFile Image )
     {
 
-        if (URLImage != null && URLImage.Length > 0 )
+        if (Image != null && Image.Length > 0 )
         {
-            var fileName = Path.GetFileName(URLImage.FileName);
+            var fileName = Path.GetFileName(Image.FileName);
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileName);
 
             using (var stream = new FileStream(filePath, FileMode.Create))
             {
-                await URLImage.CopyToAsync(stream);
+                await Image.CopyToAsync(stream);
             }
 
-            prestation.URLImage = fileName;
+            prestation.Image = fileName;
 
             _context.Add(prestation);
              await _context.SaveChangesAsync();
@@ -86,7 +86,7 @@ public class PrestationController : Controller
     }
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,NomPrestation,URLImage,Description_courte,Description")] Prestation prestation,IFormFile URLImage)
+    public async Task<IActionResult> Edit(int id, [Bind("Id,NomPrestation,Image,Description_courte,Description")] Prestation prestation,IFormFile Image)
     {
         if (id != prestation.Id)
         {
@@ -95,17 +95,17 @@ public class PrestationController : Controller
         
             try
             {
-                if(URLImage != null && URLImage.Length > 0)
+                if(Image != null && Image.Length > 0)
                 {
-                    var fileimgName = Path.GetFileName(URLImage.FileName);
+                    var fileimgName = Path.GetFileName(Image.FileName);
                     var fileimgPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileimgName);
                 
  //problème : FileMode.Edit ne fonctionne pas obliger d'avoir FileMode.Create => obligation de retélécharger l'image à chaque fois qu'on veut modif       
                 using (var stream = new FileStream(fileimgPath, FileMode.Create))
                 {
-                    await URLImage.CopyToAsync(stream);
+                    await Image.CopyToAsync(stream);
                 }
-                    prestation.URLImage=fileimgName;  
+                    prestation.Image=fileimgName;  
 
                     _context.Update(prestation);
                     await _context.SaveChangesAsync();

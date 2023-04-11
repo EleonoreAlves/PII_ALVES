@@ -49,33 +49,49 @@ public class RealisationController : Controller
     // //POST : Realisation/Create
      [HttpPost]
     [ValidateAntiForgeryToken]
-     public async Task<IActionResult> Create([Bind("NomRealisation,ImageAvt,ImageAp,Description")] Realisation realisation,IFormFile ImageAvt,IFormFile ImageAp)
+     public async Task<IActionResult> Create([Bind("NomRealisation,ImageAvt,ImageAvt2,ImageAp,ImageAp2,Description")] Realisation realisation,IFormFile ImageAvt,IFormFile ImageAp,IFormFile ImageAvt2,IFormFile ImageAp2)
     {
        
           
-            if (ImageAvt != null && ImageAvt.Length > 0 && ImageAp != null && ImageAp.Length > 0)
-        {
-            var fileavtName = Path.GetFileName(ImageAvt.FileName);
-            var fileavtPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileavtName);
+            if (ImageAvt != null && ImageAvt.Length > 0 && ImageAp != null && ImageAp.Length > 0 && ImageAvt2 != null && ImageAvt2.Length > 0 && ImageAp2 != null && ImageAp2.Length > 0)
+                {
+                    var fileavtName = Path.GetFileName(ImageAvt.FileName);
+                    var fileavtPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileavtName);
 
-            var fileapName = Path.GetFileName(ImageAp.FileName);
-            var fileapPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileapName);
+                    var fileapName = Path.GetFileName(ImageAp.FileName);
+                    var fileapPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileapName);
 
-            using (var stream = new FileStream(fileavtPath, FileMode.Create))
-            {
-                await ImageAvt.CopyToAsync(stream);
-            }
-            using (var stream = new FileStream(fileapPath, FileMode.Create))
-            {
-                await ImageAp.CopyToAsync(stream);
-            }
+                    var fileavt2Name = Path.GetFileName(ImageAvt2.FileName);
+                    var fileavt2Path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileavt2Name);
 
-            realisation.ImageAvt = fileavtName;
-            realisation.ImageAp = fileapName;
+                    var fileap2Name = Path.GetFileName(ImageAp2.FileName);
+                    var fileap2Path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileap2Name);
 
-            _context.Add(realisation);
-             await _context.SaveChangesAsync();
-         }
+                    using (var stream = new FileStream(fileavtPath, FileMode.Create))
+                    {
+                        await ImageAvt.CopyToAsync(stream);
+                    }
+                    using (var stream = new FileStream(fileapPath, FileMode.Create))
+                    {
+                        await ImageAp.CopyToAsync(stream);
+                    }
+                    using (var stream = new FileStream(fileavt2Path, FileMode.Create))
+                    {
+                        await ImageAvt2.CopyToAsync(stream);
+                    }
+                    using (var stream = new FileStream(fileap2Path, FileMode.Create))
+                    {
+                        await ImageAp2.CopyToAsync(stream);
+                    }
+
+                    realisation.ImageAvt = fileavtName;
+                    realisation.ImageAp = fileapName;
+                    realisation.ImageAvt2 = fileavt2Name;
+                    realisation.ImageAp2 = fileap2Name;
+
+                    _context.Update(realisation);
+                    await _context.SaveChangesAsync();
+                }
         return RedirectToAction(nameof(Index));
     }
 
@@ -96,7 +112,7 @@ public class RealisationController : Controller
     }
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,NomRealisation,ImageAvt,ImageAp,Description")] Realisation realisation,IFormFile ImageAvt,IFormFile ImageAp)
+    public async Task<IActionResult> Edit(int id, [Bind("Id,NomRealisation,ImageAvt,ImageAvt2,ImageAp,ImageAp2,Description")] Realisation realisation,IFormFile ImageAvt,IFormFile ImageAp,IFormFile ImageAvt2,IFormFile ImageAp2)
     {
         if (id != realisation.Id)
         {
@@ -105,13 +121,19 @@ public class RealisationController : Controller
 
         
             try
-            {  if (ImageAvt != null && ImageAvt.Length > 0 && ImageAp != null && ImageAp.Length > 0)
+            {  if (ImageAvt != null && ImageAvt.Length > 0 && ImageAp != null && ImageAp.Length > 0 && ImageAvt2 != null && ImageAvt2.Length > 0 && ImageAp2 != null && ImageAp2.Length > 0)
                 {
                     var fileavtName = Path.GetFileName(ImageAvt.FileName);
                     var fileavtPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileavtName);
 
                     var fileapName = Path.GetFileName(ImageAp.FileName);
                     var fileapPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileapName);
+
+                    var fileavt2Name = Path.GetFileName(ImageAvt2.FileName);
+                    var fileavt2Path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileavt2Name);
+
+                    var fileap2Name = Path.GetFileName(ImageAp2.FileName);
+                    var fileap2Path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileap2Name);
 
                     using (var stream = new FileStream(fileavtPath, FileMode.Create))
                     {
@@ -121,9 +143,19 @@ public class RealisationController : Controller
                     {
                         await ImageAp.CopyToAsync(stream);
                     }
+                    using (var stream = new FileStream(fileavt2Path, FileMode.Create))
+                    {
+                        await ImageAvt2.CopyToAsync(stream);
+                    }
+                    using (var stream = new FileStream(fileap2Path, FileMode.Create))
+                    {
+                        await ImageAp2.CopyToAsync(stream);
+                    }
 
                     realisation.ImageAvt = fileavtName;
                     realisation.ImageAp = fileapName;
+                    realisation.ImageAvt2 = fileavt2Name;
+                    realisation.ImageAp2 = fileap2Name;
 
                     _context.Update(realisation);
                     await _context.SaveChangesAsync();

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Carrosserie_Veve.props" />
+</Project>

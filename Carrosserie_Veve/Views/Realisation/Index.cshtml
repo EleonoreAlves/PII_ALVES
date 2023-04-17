@@ -12,7 +12,7 @@
 <div class="card container col-3" style="width: 18rem;">
     <br/>
     @if(item.ImageAp==null!)
-    {//à voir car ne fonctionne pas
+    {
   <p class="card-text" style="text-align:center"> <img class="card-img-top " style="margin-top:10px" src=../../images@(item.ImageAp) alt="photo après rénovations"></p> 
     }
     @if(item.ImageAp==null){
@@ -32,7 +32,8 @@
 </div> <br/>
 }
 <div><br/><br/><br/></div>
-
+@if (SignInManager.IsSignedIn(User))
+  {
 <div class="card container col-3" style="width: 18rem;">
     <br/><br/>
   <a asp-action="Create" class="container"><img class="card-img-top container" style="display: flex;margin-top:10px; width: 75%;text-align:center" src="../images/ajouter.png" alt="Card image cap"> </a>
@@ -42,3 +43,4 @@
     <a asp-action="Create" class="btn btn-danger container" > Ajouter</a>
   </div>
 </div> <br/>
+  }

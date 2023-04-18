@@ -1,0 +1,44 @@
+@model MvcVeve.Models.Horaire
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2 style="text-align:center">Modifier</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="HeureDebut" class="control-label"></label>
+                <input asp-for="HeureDebut" class="form-control" />
+                <span asp-validation-for="HeureDebut" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HeureFin" class="control-label"></label>
+                <input asp-for="HeureFin" class="form-control" />
+                <span asp-validation-for="HeureFin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JourOff" class="control-label"></label>
+                <input asp-for="JourOff" class="form-control" />
+                <span asp-validation-for="JourOff" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Vacances" class="control-label"></label>
+                <input asp-for="Vacances" class="form-control" />
+                <span asp-validation-for="Vacances" class="text-danger"></span>
+            </div>
+            <div class="form-group"  style="margin-top:10px" >
+                <input type="submit" value="Enregistrer" class="btn btn-danger" /> 
+                <a asp-action="Index"><input class="btn btn-secondary" type="button" value="Retour"></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

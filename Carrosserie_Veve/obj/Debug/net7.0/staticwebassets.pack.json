@@ -37,12 +37,20 @@
       "PackagePath": "staticwebassets\\images\\ajouter.png"
     },
     {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\devanture.png",
+      "PackagePath": "staticwebassets\\images\\devanture.png"
+    },
+    {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\dezFE.jpg",
       "PackagePath": "staticwebassets\\images\\dezFE.jpg"
     },
     {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\index.jpg",
       "PackagePath": "staticwebassets\\images\\index.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\map.png",
+      "PackagePath": "staticwebassets\\images\\map.png"
     },
     {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\prestationaccueil.jpg",

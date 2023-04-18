@@ -18845,6 +18845,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\Views\\Horaire\\Edit.cshtml",
+      "TargetPath": "Views\\Horaire\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\Views\\Prestation\\Create.cshtml",
       "TargetPath": "Views\\Prestation\\Create.cshtml",
       "FileKind": "mvc"

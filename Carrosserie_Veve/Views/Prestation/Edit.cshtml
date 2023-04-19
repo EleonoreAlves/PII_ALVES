@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Edit";
 }
-@* Modification avec image optionnelle pas possible *@
+@* Modification avec image optionnelle possible *@
 <h2 style="text-align:center">Modifier</h2>
 <hr />
 <div class="row">
@@ -20,7 +20,7 @@
                 <label asp-for="Image" class="control-label"></label>
                 <input asp-for="Image" class="form-control"  type="file" name="Image" />
                 <span asp-validation-for="Image" class="text-danger"></span>
-                @* <label><input type="checkbox" id="optional-image" name="optional-image"> Je ne souhaite pas ajouter d'image</label>     *@
+                <label><input type="checkbox" id="optional-image" name="optional-image"> Je ne souhaite pas ajouter d'image</label>    
             </div>
             <div class="form-group">
                 <label asp-for="Description_courte" class="control-label"></label>

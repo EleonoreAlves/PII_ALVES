@@ -116,12 +116,12 @@ public class PrestationController : Controller
                     _context.Update(prestation);
                     await _context.SaveChangesAsync();
                 }
-                // else{
-                //    // prestation.Image=null;
+                if(Image ==null){
+                   prestation.Image=null;
 
-                //     _context.Update(prestation);
-                //     await _context.SaveChangesAsync();
-                // } => ne fontionne pas dpu à un pbl de Bdd dont je n'ai pas pu m'occuper
+                    _context.Update(prestation);
+                    await _context.SaveChangesAsync();
+                } 
             }
             catch (DbUpdateConcurrencyException)
             {

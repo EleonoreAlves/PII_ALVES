@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\images\\avt2.jpg"
     },
     {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\bosse.jpg",
+      "PackagePath": "staticwebassets\\images\\bosse.jpg"
+    },
+    {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\bosses.jpg",
       "PackagePath": "staticwebassets\\images\\bosses.jpg"
     },
@@ -45,12 +49,24 @@
       "PackagePath": "staticwebassets\\images\\devanture.png"
     },
     {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\grele.jpg",
+      "PackagePath": "staticwebassets\\images\\grele.jpg"
+    },
+    {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\map.png",
       "PackagePath": "staticwebassets\\images\\map.png"
     },
     {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\parebrises.jpg",
+      "PackagePath": "staticwebassets\\images\\parebrises.jpg"
+    },
+    {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\peinture.jpg",
       "PackagePath": "staticwebassets\\images\\peinture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\phare.jpg",
+      "PackagePath": "staticwebassets\\images\\phare.jpg"
     },
     {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\prestationaccueil.jpg",

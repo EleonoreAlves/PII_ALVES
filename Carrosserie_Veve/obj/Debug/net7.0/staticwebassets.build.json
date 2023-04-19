@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f55T65RMzZvWyNCaV3vCjpq+GGTx24XPkjI/h4WFZ9M=",
+  "Hash": "F0awqPfNmvGFMu9SUt3KvHm0ozZUEZARl2JqtmjRCL8=",
   "Source": "Carrosserie_Veve",
   "BasePath": "_content/Carrosserie_Veve",
   "Mode": "Default",
@@ -1190,6 +1190,23 @@
       "OriginalItemSpec": "wwwroot\\images\\avt2.jpg"
     },
     {
+      "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\bosse.jpg",
+      "SourceId": "Carrosserie_Veve",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\",
+      "BasePath": "_content/Carrosserie_Veve",
+      "RelativePath": "images/bosse.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bosse.jpg"
+    },
+    {
       "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\bosses.jpg",
       "SourceId": "Carrosserie_Veve",
       "SourceType": "Discovered",
@@ -1241,6 +1258,23 @@
       "OriginalItemSpec": "wwwroot\\images\\devanture.png"
     },
     {
+      "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\grele.jpg",
+      "SourceId": "Carrosserie_Veve",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\",
+      "BasePath": "_content/Carrosserie_Veve",
+      "RelativePath": "images/grele.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\grele.jpg"
+    },
+    {
       "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\map.png",
       "SourceId": "Carrosserie_Veve",
       "SourceType": "Discovered",
@@ -1258,6 +1292,23 @@
       "OriginalItemSpec": "wwwroot\\images\\map.png"
     },
     {
+      "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\parebrises.jpg",
+      "SourceId": "Carrosserie_Veve",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\",
+      "BasePath": "_content/Carrosserie_Veve",
+      "RelativePath": "images/parebrises.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\parebrises.jpg"
+    },
+    {
       "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\peinture.jpg",
       "SourceId": "Carrosserie_Veve",
       "SourceType": "Discovered",
@@ -1273,6 +1324,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\peinture.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\phare.jpg",
+      "SourceId": "Carrosserie_Veve",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\",
+      "BasePath": "_content/Carrosserie_Veve",
+      "RelativePath": "images/phare.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\phare.jpg"
     },
     {
       "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\prestationaccueil.jpg",

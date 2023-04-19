@@ -7,7 +7,19 @@
     
     <br/>
     <h2 style="text-align:center">@Html.DisplayFor(model => model.NomRealisation)</h2><br/><hr />
-     <div class="row">
+    <div class="row">
+        <h5 style="text-align:center">Avant/Après</h5>
+            <div class="col-md-6 img-center" >
+                <img class="img-fluid mb-3 img-center" src="../../images/@(Model.ImageAvt)" alt="Image avant rénovations">
+                <img class="img-fluid" src="../../images/@(Model.ImageAvt2)"  alt="Image avant rénovations">
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid mb-3 img-center" src="../../images/@(Model.ImageAp)" alt="Image après rénovations">
+                <img class="img-fluid"    src="../../images/@(Model.ImageAp2)" alt="Image après rénovations">
+            </div>
+    </div>
+    <hr/>
+     @* <div class="row">
         <h5 style="text-align:center">Avant/Après</h5>
         <div class="col page" style="height:25%" >
             <img class="card-img-top " style="margin-top:10px" src=../../images/@(Model.ImageAvt) alt="photo avant rénovations">
@@ -21,7 +33,7 @@
         <div class="col page" style="height:25%">
             <img class="card-img-top " style="margin-top:10px" src=../../images/@(Model.ImageAp2) alt="photo après rénovations">
         </div>
-        </div><hr />
+        </div><hr /> *@
         <div class="container" style="width: 18rem; text-align:center">
    
         
@@ -30,16 +42,7 @@
         <p><br/></p>
         </div>
 
-        <div class="row">
-            <div class="col-md-6 img-center" >
-                <img class="img-fluid mb-3 img-center" src="../../images/@(Model.ImageAvt)" alt="Image avant rénovations">
-                <img class="img-fluid" src="../../images/@(Model.ImageAvt2)"  alt="Image avant rénovations">
-            </div>
-            <div class="col-md-6">
-                <img class="img-fluid mb-3 img-center" src="../../images/@(Model.ImageAp)" alt="Image après rénovations">
-                <img class="img-fluid"    src="../../images/@(Model.ImageAp2)" alt="Image après rénovations">
-            </div>
-        </div>
+        
 
  <br/>
 </div>

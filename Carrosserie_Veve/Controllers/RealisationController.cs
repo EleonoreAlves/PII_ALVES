@@ -169,9 +169,8 @@ public class RealisationController : Controller
                     await _context.SaveChangesAsync();
                 }
                 
-                if (ImageAvt != null && ImageAvt.Length > 0 && ImageAp != null && ImageAp.Length > 0 ){
-                   realisation.ImageAvt2=null;
-                      realisation.ImageAp2=null; 
+                if (ImageAvt != null && ImageAvt.Length > 0 && ImageAp != null && ImageAp.Length > 0  && ImageAvt2==null){
+                   
                 var fileavtName = Path.GetFileName(ImageAvt.FileName);
                     var fileavtPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileavtName);
 
@@ -185,8 +184,11 @@ public class RealisationController : Controller
                     {
                         await ImageAp.CopyToAsync(stream);
                     }
+
                      realisation.ImageAvt = fileavtName;
                      realisation.ImageAp = fileapName;
+                     realisation.ImageAvt2=null;
+                      realisation.ImageAp2=null; 
                     _context.Update(realisation);
                     await _context.SaveChangesAsync();
                 }// images Avt2 et Ap2 optionnelles

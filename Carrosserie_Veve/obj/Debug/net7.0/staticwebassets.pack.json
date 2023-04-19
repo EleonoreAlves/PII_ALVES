@@ -13,26 +13,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\Apres.jpg",
-      "PackagePath": "staticwebassets\\images\\Apres.jpg"
-    },
-    {
-      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\Avant.jpg",
-      "PackagePath": "staticwebassets\\images\\Avant.jpg"
-    },
-    {
-      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\IMG_0477.jpg",
-      "PackagePath": "staticwebassets\\images\\IMG_0477.jpg"
-    },
-    {
-      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\IMG_0478.jpg",
-      "PackagePath": "staticwebassets\\images\\IMG_0478.jpg"
-    },
-    {
-      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\IMG_0499.jpg",
-      "PackagePath": "staticwebassets\\images\\IMG_0499.jpg"
-    },
-    {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\ajouter.png",
       "PackagePath": "staticwebassets\\images\\ajouter.png"
     },
@@ -47,14 +27,6 @@
     {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\devanture.png",
       "PackagePath": "staticwebassets\\images\\devanture.png"
-    },
-    {
-      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\dezFE.jpg",
-      "PackagePath": "staticwebassets\\images\\dezFE.jpg"
-    },
-    {
-      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\index.jpg",
-      "PackagePath": "staticwebassets\\images\\index.jpg"
     },
     {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\map.png",

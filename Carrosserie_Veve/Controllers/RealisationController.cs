@@ -91,7 +91,7 @@ public class RealisationController : Controller
 
                     _context.Update(realisation);
                     await _context.SaveChangesAsync();
-                }// images Avt2 at Ap2 optionnel
+                }// images Avt2 at Ap2 optionnelles
                 else{
             realisation.ImageAvt=null;
             realisation.ImageAvt2=null;
@@ -189,7 +189,7 @@ public class RealisationController : Controller
                      realisation.ImageAp = fileapName;
                     _context.Update(realisation);
                     await _context.SaveChangesAsync();
-                }
+                }// images Avt2 et Ap2 optionnelles
             
             }
             catch (DbUpdateConcurrencyException)

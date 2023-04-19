@@ -105,8 +105,7 @@ public class PrestationController : Controller
                 {
                     var fileimgName = Path.GetFileName(Image.FileName);
                     var fileimgPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileimgName);
-                
- //problème : FileMode.Edit ne fonctionne pas obliger d'avoir FileMode.Create => obligation de retélécharger l'image à chaque fois qu'on veut modif       
+                     
                 using (var stream = new FileStream(fileimgPath, FileMode.Create))
                 {
                     await Image.CopyToAsync(stream);

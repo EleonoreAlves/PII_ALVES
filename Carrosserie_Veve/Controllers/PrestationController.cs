@@ -67,6 +67,12 @@ public class PrestationController : Controller
             _context.Add(prestation);
              await _context.SaveChangesAsync();
          }
+         // l'image est optionnelle donc l'utilisateur peut ne pas en remplir
+         else{
+            prestation.Image=null;
+            _context.Add(prestation);
+             await _context.SaveChangesAsync();
+         }
         return RedirectToAction(nameof(Index));
     }
         // PUT : 
@@ -110,6 +116,12 @@ public class PrestationController : Controller
                     _context.Update(prestation);
                     await _context.SaveChangesAsync();
                 }
+                // else{
+                //    // prestation.Image=null;
+
+                //     _context.Update(prestation);
+                //     await _context.SaveChangesAsync();
+                // } => ne fontionne pas dpu à un pbl de Bdd dont je n'ai pas pu m'occuper
             }
             catch (DbUpdateConcurrencyException)
             {

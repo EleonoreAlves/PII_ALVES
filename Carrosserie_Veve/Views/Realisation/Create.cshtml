@@ -23,8 +23,9 @@
             </div>
              <div class="form-group">
                 <label asp-for="ImageAvt2" class="control-label"></label>
-                <input asp-for="ImageAvt2" class="form-control" type="file" name="ImageAvt2" accept="image/png, image/jpeg, image/webp" required  />
+                <input asp-for="ImageAvt2" class="form-control" type="file" name="ImageAvt2" />
                 <span asp-validation-for="ImageAvt2" class="text-danger"></span>
+                <label><input type="checkbox" id="optional-image" name="optional-image"> Je ne souhaite pas ajouter d'image</label>
             </div>
             <div class="form-group">
                 <label asp-for="ImageAp" class="control-label"></label>
@@ -33,8 +34,9 @@
             </div>
             <div class="form-group">
                 <label asp-for="ImageAp2" class="control-label"></label>
-                <input asp-for="ImageAp2" class="form-control" type="file" name="ImageAp2" accept="image/png, image/jpeg, image/webp" required/>
+                <input asp-for="ImageAp2" class="form-control" type="file" name="ImageAp2" />
                 <span asp-validation-for="ImageAp2" class="text-danger"></span>
+                <label><input type="checkbox" id="optional-image" name="optional-image"> Je ne souhaite pas ajouter d'image</label>
             </div>
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>

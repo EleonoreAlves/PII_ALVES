@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using MvcVeve.Models;
 using Carrosserie_Veve.Areas.Identity.Data;
 
-
+// seul get et edit disponible : il n'y aura jamais plusieurs horaires
+// l'administrateur modifiera seulement celle existante
 namespace MvcVeve.Controllers;
 
 public class HoraireController : Controller{

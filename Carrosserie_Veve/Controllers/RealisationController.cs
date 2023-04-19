@@ -91,7 +91,15 @@ public class RealisationController : Controller
 
                     _context.Update(realisation);
                     await _context.SaveChangesAsync();
-                }
+                }// images Avt2 at Ap2 optionnel
+                else{
+            realisation.ImageAvt=null;
+            realisation.ImageAvt2=null;
+            realisation.ImageAp=null;
+            realisation.ImageAp2=null;
+            _context.Add(realisation);
+             await _context.SaveChangesAsync();
+         }
         return RedirectToAction(nameof(Index));
     }
 
@@ -160,6 +168,29 @@ public class RealisationController : Controller
                     _context.Update(realisation);
                     await _context.SaveChangesAsync();
                 }
+                
+                // else{
+                //    // realisation.ImageAvt2=null;
+                //       realisation.ImageAp2=null; 
+                // var fileavtName = Path.GetFileName(ImageAvt.FileName);
+                //     var fileavtPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileavtName);
+
+                //     var fileapName = Path.GetFileName(ImageAp.FileName);
+                //     var fileapPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images", fileapName);
+                // using (var stream = new FileStream(fileavtPath, FileMode.Create))
+                //     {
+                //         await ImageAvt.CopyToAsync(stream);
+                //     }
+                //     using (var stream = new FileStream(fileapPath, FileMode.Create))
+                //     {
+                //         await ImageAp.CopyToAsync(stream);
+                //     }
+                //      realisation.ImageAvt = fileavtName;
+                //      realisation.ImageAp = fileapName;
+                //     _context.Update(realisation);
+                //     await _context.SaveChangesAsync();
+                // } => ne fontionne pas dpu à un pbl de Bdd dont je n'ai pas pu m'occuper
+            
             }
             catch (DbUpdateConcurrencyException)
             {

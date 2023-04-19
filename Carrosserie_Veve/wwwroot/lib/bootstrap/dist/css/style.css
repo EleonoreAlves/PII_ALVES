@@ -20,3 +20,37 @@ html {
 .fond{
   background-color : #f3ece3
 }
+.img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.img-center img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 576px) {
+  img {
+      max-height: calc(50vh - 80px);
+  }
+}
+
+@media (min-width: 992px) {
+  img {
+      max-height: calc(100vh - 80px);
+  }
+}
+
+@media (orientation: landscape) {
+  img {
+      max-height: 100%;
+  }
+}

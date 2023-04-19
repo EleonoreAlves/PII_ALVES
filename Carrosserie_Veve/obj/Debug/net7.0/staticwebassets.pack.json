@@ -17,6 +17,22 @@
       "PackagePath": "staticwebassets\\images\\ajouter.png"
     },
     {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\ap1.jpg",
+      "PackagePath": "staticwebassets\\images\\ap1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\ap2.jpg",
+      "PackagePath": "staticwebassets\\images\\ap2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\avt1.jpg",
+      "PackagePath": "staticwebassets\\images\\avt1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\avt2.jpg",
+      "PackagePath": "staticwebassets\\images\\avt2.jpg"
+    },
+    {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\bosses.jpg",
       "PackagePath": "staticwebassets\\images\\bosses.jpg"
     },

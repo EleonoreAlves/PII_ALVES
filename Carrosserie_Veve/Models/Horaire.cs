@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 namespace MvcVeve.Models;
-// à voir si on garde ce modèle
+// voué à être modifié : jour off pas nécessaire
 public class Horaire{
     public int Id {get;set;}
     public string HeureDebut {get;set;}=null!;

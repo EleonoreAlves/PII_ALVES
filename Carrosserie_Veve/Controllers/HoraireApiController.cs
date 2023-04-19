@@ -15,7 +15,7 @@ public class HoraireApiController : ControllerBase
     {
         _context = context;
     }
-
+// j'ai mis toutes les API au cas ou l'entreprise change d'avis mais seul les get et put( modification) seront utiles
     //GET : api/HoraireApi 
     public async Task<ActionResult<IEnumerable<Horaire>>> GetHoraire()
     {

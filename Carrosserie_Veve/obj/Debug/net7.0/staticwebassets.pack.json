@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\images\\ajouter.png"
     },
     {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\bosses.jpg",
+      "PackagePath": "staticwebassets\\images\\bosses.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\carrosseriepresta.jpg",
+      "PackagePath": "staticwebassets\\images\\carrosseriepresta.jpg"
+    },
+    {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\devanture.png",
       "PackagePath": "staticwebassets\\images\\devanture.png"
     },
@@ -51,6 +59,10 @@
     {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\map.png",
       "PackagePath": "staticwebassets\\images\\map.png"
+    },
+    {
+      "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\peinture.jpg",
+      "PackagePath": "staticwebassets\\images\\peinture.jpg"
     },
     {
       "Id": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\prestationaccueil.jpg",

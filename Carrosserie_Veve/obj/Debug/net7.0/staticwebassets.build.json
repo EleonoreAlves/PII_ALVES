@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QgHKRnax9O/xsECPzEDLzPNLy/sf1HaYm1aH/8bOMj8=",
+  "Hash": "Gt1igCsS2X83jDY8GUvjil6zFfTBJPt690C8Ua35gRI=",
   "Source": "Carrosserie_Veve",
   "BasePath": "_content/Carrosserie_Veve",
   "Mode": "Default",
@@ -1156,6 +1156,40 @@
       "OriginalItemSpec": "wwwroot\\images\\Avant.jpg"
     },
     {
+      "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\bosses.jpg",
+      "SourceId": "Carrosserie_Veve",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\",
+      "BasePath": "_content/Carrosserie_Veve",
+      "RelativePath": "images/bosses.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bosses.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\carrosseriepresta.jpg",
+      "SourceId": "Carrosserie_Veve",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\",
+      "BasePath": "_content/Carrosserie_Veve",
+      "RelativePath": "images/carrosseriepresta.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\carrosseriepresta.jpg"
+    },
+    {
       "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\devanture.png",
       "SourceId": "Carrosserie_Veve",
       "SourceType": "Discovered",
@@ -1273,6 +1307,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\map.png"
+    },
+    {
+      "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\peinture.jpg",
+      "SourceId": "Carrosserie_Veve",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\",
+      "BasePath": "_content/Carrosserie_Veve",
+      "RelativePath": "images/peinture.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\peinture.jpg"
     },
     {
       "Identity": "C:\\Users\\alvee\\PII_ALVES\\Carrosserie_Veve\\wwwroot\\images\\prestationaccueil.jpg",

@@ -7,11 +7,14 @@
 }
 <p><br/></p>
 <div class="row">
+  
     @foreach (var item in Model)
 {
 <div class="card container col-3" style="width: 18rem;">
     <br/>
-  <img class="card-img-top img-fluid" style="margin-top:10px" src="../images/prestationaccueil.jpg" alt="Card image cap">
+  @* <img class="card-img-top img-fluid" style="margin-top:10px" src="../../images@(item.Image)" alt="photo après rénovations"> *@
+
+  <img class="card-img-top img-fluid" style="margin-top:10px" src="../images/prestationaccueil.jpg" alt="image prestation">
   <br/>
   <div class="card-body ">
     <h5 class="card-title " style="text-align:center"> @Html.DisplayFor(modelItem => item.NomPrestation)</h5><br/>
@@ -25,7 +28,7 @@
     <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger container" > Supprimer</a>
   }
   </div>
-</div> <br/>
+</div> <br/><br/>
 }
 <div><br/><br/><br/></div>
 @if (SignInManager.IsSignedIn(User))

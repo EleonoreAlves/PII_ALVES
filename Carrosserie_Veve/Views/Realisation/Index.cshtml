@@ -1,5 +1,5 @@
 @model IEnumerable<MvcVeve.Models.Realisation>
-  @using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
 
 @{
@@ -13,7 +13,7 @@
     <br/>
     @* @if(item.ImageAp==null!)
     { *@
-  <p class="card-text" style="text-align:center"> <img class="card-img-top img-fluid" style="margin-top:10px" src=../../images@(item.ImageAp) alt="photo après rénovations"></p> 
+  <img class="card-img-top img-fluid" style="margin-top:10px" src=../../images@(item.ImageAp) alt="photo après rénovations">
     @* }
     @if(item.ImageAp==null){
         <img class="card-img-top " style="margin-top:10px" src="../../images/prestationaccueil.jpg" alt="Card image cap">
@@ -30,7 +30,7 @@
   }
   </div>
 </div> <br/>
-}
+}<p></p>
 <div><br/><br/><br/></div>
 @if (SignInManager.IsSignedIn(User))
   {

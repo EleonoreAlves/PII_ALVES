@@ -10,8 +10,9 @@
   <div class="container" style="width: 18rem; text-align:center">
    <h2 style="text-align:center">@Html.DisplayFor(model => model.NomPrestation)
    </h2><br/>
+    @if (Model.Image != null) {  
    <img class="card-img-top img-fluid" style="margin-top:10px" src=../../images/@(Model.Image) alt="photo prestation"><br/>
-   <hr />
+    }<hr />
   </div>
   <div class="text-center">
     @Html.DisplayFor(model => model.Description)
